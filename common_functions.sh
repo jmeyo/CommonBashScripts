@@ -12,7 +12,6 @@ function error() {
     exit 1
 }
 
-trap 'error ${LINENO} ${?}' ERR
 trap ctrl_c INT
 
 black='\E[30;47m'
