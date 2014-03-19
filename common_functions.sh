@@ -7,7 +7,7 @@ function error() {
     JOB="$0"              # job name
     LASTLINE="$1"         # line of error occurrence
     LASTERR="$2"          # error code
-    #echo "ERROR in ${JOB} : line ${LASTLINE} with exit code ${LASTERR}"
+    echo "ERROR in ${JOB} : line ${LASTLINE} with exit code ${LASTERR}"
     cecho "Stopping  "`basename $0` $red
     exit 1
 }
